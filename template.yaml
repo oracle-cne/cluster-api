@@ -1,0 +1,8 @@
+---
+TagFormat: v(?P<major>[0-9])\.(?P<minor>[0-9]+)\.(?P<patch>[[:digit:]]+)
+BranchTemplate: feature/${major}.${minor}.${patch}
+Comparator: '0'
+MasterBranchTemplate: oracle/release/${major}.${minor}.${patch}
+TemplateDirectory: "v${major}.${minor}"
+SemverTagFilter: ">= 1.9.9"
+InitScript: "olm/onboard.sh"
