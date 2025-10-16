@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 # This script is run when the branch for a new release are initially onboarded.
 
