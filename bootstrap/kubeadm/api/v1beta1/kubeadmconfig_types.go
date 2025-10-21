@@ -427,6 +427,14 @@ func (c *KubeadmConfigSpec) validateIgnition(pathPrefix *field.Path) field.Error
 
 // IgnitionSpec contains Ignition specific configuration.
 type IgnitionSpec struct {
+	// Variant selects the Operating System variant to use for the generated configuration
+	// +optional
+	Variant string `json:"variant,omitempty"`
+
+	// Version selects the version of Butane to use for generated configuration
+	// +optional
+	Version string `json:"version,omitempty"`
+
 	// containerLinuxConfig contains CLC specific configuration.
 	// +optional
 	ContainerLinuxConfig *ContainerLinuxConfig `json:"containerLinuxConfig,omitempty"`
