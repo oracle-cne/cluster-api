@@ -49,6 +49,7 @@ SPDX:Apache-2.0
 Copyright 2022 Google LLC
 Copyright 2023 Google LLC
 Copyright 2024 Google LLC
+Copyright 2025 Google LLC
 
 --------------------------------- (separator) ----------------------------------
 
@@ -193,6 +194,46 @@ Copyright (c) 2014 Adrian-George Bostan.
 
 --------------------------------- (separator) ----------------------------------
 
+== Dependency
+github.com/ajeddeloh/go-json
+
+== License Type
+SPDX:BSD-3-Clause--modified-by-Google
+
+== Copyright
+Copyright (c) 2012 The Go Authors. All rights reserved.
+Copyright 2010 The Go Authors. All rights reserved.
+Copyright 2011 The Go Authors. All rights reserved.
+Copyright 2013 The Go Authors. All rights reserved.
+Copyright 2016 The Go Authors. All rights reserved.
+Copyright 2018 The Go Authors. All rights reserved.
+Copyright 2019 The Go Authors. All rights reserved.
+
+== Patents
+Additional IP Rights Grant (Patents)
+
+"This implementation" means the copyrightable works distributed by
+Google as part of the Go project.
+
+Google hereby grants to You a perpetual, worldwide, non-exclusive,
+no-charge, royalty-free, irrevocable (except as stated in this section)
+patent license to make, have made, use, offer to sell, sell, import,
+transfer and otherwise run, modify and propagate the contents of this
+implementation of Go, where such license applies only to those patent
+claims, both currently owned or controlled by Google and acquired in
+the future, licensable by Google that are necessarily infringed by this
+implementation of Go.  This grant does not include claims that would be
+infringed only as a consequence of further modification of this
+implementation.  If you or your agent or exclusive licensee institute or
+order or agree to the institution of patent litigation against any
+entity (including a cross-claim or counterclaim in a lawsuit) alleging
+that this implementation of Go or any code incorporated within this
+implementation of Go constitutes direct or contributory patent
+infringement, or inducement of patent infringement, then any patent
+rights granted to you under this License for this implementation of Go
+shall terminate as of the date such litigation is filed.
+
+
 --------------------------------- (separator) ----------------------------------
 
 == Dependency
@@ -260,6 +301,26 @@ Copyright (c) 2014 Alex Saskevich
 --------------------------------- (separator) ----------------------------------
 
 == Dependency
+github.com/aws/aws-sdk-go-v2
+
+== License Type
+SPDX:Apache-2.0
+
+== Copyright
+Copyright (c) 2009 The Go Authors. All rights reserved.
+Copyright 2013 The Go Authors. All rights reserved.
+Copyright 2014-2015 Stripe, Inc.
+Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+== Notices
+AWS SDK for Go
+Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Copyright 2014-2015 Stripe, Inc.
+
+
+--------------------------------- (separator) ----------------------------------
+
+== Dependency
 github.com/beorn7/perks
 
 == License Type
@@ -300,6 +361,23 @@ SPDX:MIT
 
 == Copyright
 Copyright (c) 2016 Caleb Spare
+
+--------------------------------- (separator) ----------------------------------
+
+== Dependency
+github.com/clarketm/json
+
+== License Type
+SPDX:BSD-3-Clause--modified-by-Google
+
+== Copyright
+Copyright (c) 2009 The Go Authors. All rights reserved.
+Copyright 2010 The Go Authors. All rights reserved.
+Copyright 2011 The Go Authors. All rights reserved.
+Copyright 2013 The Go Authors. All rights reserved.
+Copyright 2016 The Go Authors. All rights reserved.
+Copyright 2018 The Go Authors. All rights reserved.
+Copyright 2019 The Go Authors. All rights reserved.
 
 --------------------------------- (separator) ----------------------------------
 
@@ -509,6 +587,67 @@ Copyright 2025 yashsingh74 yashsingh1774@gmail.com
 --------------------------------- (separator) ----------------------------------
 
 == Dependency
+github.com/coreos/butane
+
+== License Type
+SPDX:Apache-2.0
+
+== Copyright
+Copyright 2019 Red Hat, Inc
+Copyright 2019 Red Hat, Inc.
+Copyright 2020 Red Hat, Inc
+Copyright 2021 Red Hat, Inc
+Copyright 2022 Red Hat, Inc
+Copyright 2022 Red Hat, Inc.
+Copyright 2023 Red Hat, Inc
+Copyright 2023 Red Hat, Inc.
+
+--------------------------------- (separator) ----------------------------------
+
+== Dependency
+github.com/coreos/go-json
+
+== License Type
+SPDX:BSD-3-Clause--modified-by-Google
+
+== Copyright
+Copyright (c) 2012 The Go Authors. All rights reserved.
+Copyright 2010 The Go Authors. All rights reserved.
+Copyright 2011 The Go Authors. All rights reserved.
+Copyright 2013 The Go Authors. All rights reserved.
+Copyright 2016 The Go Authors. All rights reserved.
+Copyright 2018 The Go Authors. All rights reserved.
+Copyright 2019 The Go Authors. All rights reserved.
+Copyright 2021 The Go Authors. All rights reserved.
+
+== Patents
+Additional IP Rights Grant (Patents)
+
+"This implementation" means the copyrightable works distributed by
+Google as part of the Go project.
+
+Google hereby grants to You a perpetual, worldwide, non-exclusive,
+no-charge, royalty-free, irrevocable (except as stated in this section)
+patent license to make, have made, use, offer to sell, sell, import,
+transfer and otherwise run, modify and propagate the contents of this
+implementation of Go, where such license applies only to those patent
+claims, both currently owned or controlled by Google and acquired in
+the future, licensable by Google that are necessarily infringed by this
+implementation of Go.  This grant does not include claims that would be
+infringed only as a consequence of further modification of this
+implementation.  If you or your agent or exclusive licensee institute or
+order or agree to the institution of patent litigation against any
+entity (including a cross-claim or counterclaim in a lawsuit) alleging
+that this implementation of Go or any code incorporated within this
+implementation of Go constitutes direct or contributory patent
+infringement, or inducement of patent infringement, then any patent
+rights granted to you under this License for this implementation of Go
+shall terminate as of the date such litigation is filed.
+
+
+--------------------------------- (separator) ----------------------------------
+
+== Dependency
 github.com/coreos/go-semver
 
 == License Type
@@ -583,6 +722,58 @@ Copyright 2018 CoreOS, Inc
 This product includes software developed at CoreOS, Inc.
 (http://www.coreos.com/).
 
+
+--------------------------------- (separator) ----------------------------------
+
+== Dependency
+github.com/coreos/ignition/v2
+
+== License Type
+SPDX:Apache-2.0
+
+== Copyright
+Copyright 2014-2015 VMware, Inc. All Rights Reserved.
+Copyright 2015 CoreOS, Inc
+Copyright 2015 CoreOS, Inc.
+Copyright 2016 CoreOS, Inc.
+Copyright 2017 CoreOS, Inc.
+Copyright 2018 - The Ignition authors
+Copyright 2018 CoreOS, Inc.
+Copyright 2019 CoreOS, Inc.
+Copyright 2019 Red Hat
+Copyright 2019 Red Hat, Inc.
+Copyright 2019 RedHat, Inc.
+Copyright 2020 CoreOS, Inc.
+Copyright 2020 Red Hat
+Copyright 2020 Red Hat, Inc.
+Copyright 2021 Red Hat
+Copyright 2021 Red Hat, Inc.
+Copyright 2021 Red Hat.
+Copyright 2022 Red Hat, Inc.
+Copyright 2023 CoreOS, Inc.
+Copyright 2023 Red Hat
+Copyright 2023 Red Hat, Inc.
+Copyright 2024 CoreOS, Inc.
+Copyright 2025 UpCloud
+
+== Notices
+CoreOS Project
+Copyright 2015 CoreOS, Inc
+
+This product includes software developed at CoreOS, Inc.
+(http://www.coreos.com/).
+
+
+--------------------------------- (separator) ----------------------------------
+
+== Dependency
+github.com/coreos/vcontext
+
+== License Type
+SPDX:Apache-2.0
+
+== Copyright
+Copyright 2019 Red Hat, Inc
 
 --------------------------------- (separator) ----------------------------------
 
@@ -2051,6 +2242,46 @@ Copyright (c) 2015, Dave Cheney <dave@cheney.net>
 --------------------------------- (separator) ----------------------------------
 
 == Dependency
+github.com/pmezard/go-difflib
+
+== License Type
+=== BSD-3-Clause-e9a2ebb8
+Copyright (c) 2013, Patrick Mezard
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+    Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+    The names of its contributors may not be used to endorse or promote
+products derived from this software without specific prior written
+permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+== Copyright
+Copyright (c) 2013, Patrick Mezard
+
+--------------------------------- (separator) ----------------------------------
+
+== Dependency
 github.com/prometheus/client_golang
 
 == License Type
@@ -2316,6 +2547,17 @@ Copyright (c) 2017, Adrian Stoewer <adrian.stoewer@rz.ifi.lmu.de>
 --------------------------------- (separator) ----------------------------------
 
 == Dependency
+github.com/stretchr/testify
+
+== License Type
+SPDX:MIT
+
+== Copyright
+Copyright (c) 2012-2020 Mat Ryer, Tyler Bunnell and contributors.
+
+--------------------------------- (separator) ----------------------------------
+
+== Dependency
 github.com/subosito/gotenv
 
 == License Type
@@ -2415,6 +2657,58 @@ Copyright 2024 The etcd Authors
 --------------------------------- (separator) ----------------------------------
 
 == Dependency
+go.opentelemetry.io/auto/sdk
+
+== License Type
+SPDX:Apache-2.0
+
+== Copyright
+Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+Copyright (C) 2013 Blake Mizerany
+Copyright (C) 2013-2015 Alexei Starovoitov <ast@kernel.org>
+Copyright (C) 2014-2019, Matt Butcher and Matt Farina
+Copyright (C) 2015 Huawei Inc.
+Copyright (C) 2015 Wang Nan <wangnan0@huawei.com>
+Copyright (C) 2021 Facebook
+Copyright (c) 2009 The Go Authors. All rights reserved.
+Copyright (c) 2009,2014 Google Inc. All rights reserved.
+Copyright (c) 2011 The Snappy-Go Authors. All rights reserved.
+Copyright (c) 2011, Open Knowledge Foundation Ltd.
+Copyright (c) 2012 The Go Authors. All rights reserved.
+Copyright (c) 2013 The Go Authors. All rights reserved.
+Copyright (c) 2013, The GoGo Authors. All rights reserved.
+Copyright (c) 2014 Cenk Altı
+Copyright (c) 2015 Klaus Post
+Copyright (c) 2015 The Libbpf Authors. All rights reserved.
+Copyright (c) 2015, Dave Cheney <dave@cheney.net>
+Copyright (c) 2015, Gengo, Inc.
+Copyright (c) 2016 Caleb Spare
+Copyright (c) 2016 json-iterator
+Copyright (c) 2017 Nathan Sweet
+Copyright (c) 2017-2021 Uber Technologies, Inc.
+Copyright (c) 2018 - 2019 Intel Corporation.
+Copyright (c) 2018 The Go Authors. All rights reserved.
+Copyright (c) 2018, 2019 Cloudflare
+Copyright (c) 2019 Authors of Cilium
+Copyright (c) 2019 Facebook
+Copyright (c) 2019 Klaus Post. All rights reserved.
+Copyright 2009 The Go Authors.
+Copyright 2010 The Go Authors
+Copyright 2010 The Go Authors. All rights reserved.
+Copyright 2012-2015 The Prometheus Authors
+Copyright 2013-2015 Blake Mizerany, Björn Rabenstein
+Copyright 2014 gRPC authors.
+Copyright 2014-2015 The Prometheus Authors
+Copyright 2015 The Go Authors.
+Copyright 2015 The Prometheus Authors
+Copyright 2016 The filepathx Authors
+Copyright 2016-2017 The New York Times Company
+Copyright 2023 The Go Authors. All rights reserved.
+Copyright The OpenTelemetry Authors
+
+--------------------------------- (separator) ----------------------------------
+
+== Dependency
 go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc
 
 == License Type
@@ -2450,68 +2744,6 @@ go.opentelemetry.io/otel
 SPDX:Apache-2.0
 
 == Copyright
-+ GO_PKG=go.opentelemetry.io/otel:v1.29.0
-++ echo go.opentelemetry.io/otel:v1.29.0
-++ cut -d: -f1
-+ pkg=go.opentelemetry.io/otel
-++ echo go.opentelemetry.io/otel:v1.29.0
-++ cut -d: -f2
-+ pkg_version=v1.29.0
-+ [[ -z go.opentelemetry.io/otel ]]
-+ [[ -z v1.29.0 ]]
-+ pkg=go.opentelemetry.io/otel
-+ query=
-+ [[ v1.29.0 =~ ^v[0-9]+.[0-9]+.[0-9]+$ ]]
-+ query='curl -s https://proxy.golang.org/go.opentelemetry.io/otel/@v/v1.29.0.info|jq -r '''.Origin.URL''''
-+ pkg_version=v1.29.0
-++ eval 'curl -s https://proxy.golang.org/go.opentelemetry.io/otel/@v/v1.29.0.info|jq -r '''.Origin.URL''''
-+++ curl -s https://proxy.golang.org/go.opentelemetry.io/otel/@v/v1.29.0.info
-+++ jq -r .Origin.URL
-+ pkg_github_url=https://github.com/open-telemetry/opentelemetry-go
-+ [[ https://github.com/open-telemetry/opentelemetry-go = 
-ull ]]
-+ [[ go.opentelemetry.io/otel =~ ^github.com ]]
-+ [[ -z https://github.com/open-telemetry/opentelemetry-go ]]
-+ [[ https://github.com/open-telemetry/opentelemetry-go = 
-ull ]]
-++ echo https://github.com/open-telemetry/opentelemetry-go
-++ sed 's|/v[0-9]+/*$||'
-+ pkg_github_url=https://github.com/open-telemetry/opentelemetry-go
-+ trimmed_dir=
-+ [[ https://github.com/open-telemetry/opentelemetry-go != h		ps://gi	hu.com ]]
-+ wget --spider --timeout=3 -q https://github.com/open-telemetry/opentelemetry-go
-+ break
-+ [[ https://github.com/open-telemetry/opentelemetry-go = h		ps://gi	hu.com ]]
-+ git clone https://github.com/open-telemetry/opentelemetry-go
-++ basename https://github.com/open-telemetry/opentelemetry-go .git
-+ repo_dir=opentelemetry-go
-+ cd opentelemetry-go
-++ find . -type d -name '' -print -quit
-+ subcomponent=
-+ [[ -n '' ]]
-++ grep -rIE '^(s**|//|#)?s*Copyright( ©)?( [0-9]{4})? .+' --exclude-dir=vendor --exclude-dir=.git .
-++ cut -d: -f2
-++ sed 's/^[[:space:]#/*]+//'
-++ sort
-++ uniq
-++ grep -vIE '^s*(*|//|#)?s*Copyrights*(()?(c|C|©)?())?s+([[|{|<]?(yyyy|[0-9]{4}|year)?[]|}|>]?)?s+([[|{|<]?(name of copyright owner|name of author)[]|}|>]?)?s*$'
-++ tr '
-' '
-'
-+ copyright_txt='Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2022 The Go Authors. All rights reserved.
-Copyright The OpenTelemetry Authors
-'
-+ [[ -z Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2022 The Go Authors. All rights reserved.
-Copyright The OpenTelemetry Authors
- ]]
-+ cd ..
-+ rm -rf ./opentelemetry-go
-+ echo Copyright 2009 The Go Authors. All rights 'reserved.
-Copyright' 2022 The Go Authors. All rights 'reserved.
-Copyright' The OpenTelemetry 'Authors
-'
 Copyright 2009 The Go Authors. All rights reserved.
 Copyright 2022 The Go Authors. All rights reserved.
 Copyright The OpenTelemetry Authors
@@ -2551,68 +2783,6 @@ go.opentelemetry.io/otel/metric
 SPDX:Apache-2.0
 
 == Copyright
-+ GO_PKG=go.opentelemetry.io/otel/metric:v1.29.0
-++ echo go.opentelemetry.io/otel/metric:v1.29.0
-++ cut -d: -f1
-+ pkg=go.opentelemetry.io/otel/metric
-++ echo go.opentelemetry.io/otel/metric:v1.29.0
-++ cut -d: -f2
-+ pkg_version=v1.29.0
-+ [[ -z go.opentelemetry.io/otel/metric ]]
-+ [[ -z v1.29.0 ]]
-+ pkg=go.opentelemetry.io/otel/metric
-+ query=
-+ [[ v1.29.0 =~ ^v[0-9]+.[0-9]+.[0-9]+$ ]]
-+ query='curl -s https://proxy.golang.org/go.opentelemetry.io/otel/metric/@v/v1.29.0.info|jq -r '''.Origin.URL''''
-+ pkg_version=v1.29.0
-++ eval 'curl -s https://proxy.golang.org/go.opentelemetry.io/otel/metric/@v/v1.29.0.info|jq -r '''.Origin.URL''''
-+++ curl -s https://proxy.golang.org/go.opentelemetry.io/otel/metric/@v/v1.29.0.info
-+++ jq -r .Origin.URL
-+ pkg_github_url=https://github.com/open-telemetry/opentelemetry-go
-+ [[ https://github.com/open-telemetry/opentelemetry-go = 
-ull ]]
-+ [[ go.opentelemetry.io/otel/metric =~ ^github.com ]]
-+ [[ -z https://github.com/open-telemetry/opentelemetry-go ]]
-+ [[ https://github.com/open-telemetry/opentelemetry-go = 
-ull ]]
-++ echo https://github.com/open-telemetry/opentelemetry-go
-++ sed 's|/v[0-9]+/*$||'
-+ pkg_github_url=https://github.com/open-telemetry/opentelemetry-go
-+ trimmed_dir=
-+ [[ https://github.com/open-telemetry/opentelemetry-go != h		ps://gi	hu.com ]]
-+ wget --spider --timeout=3 -q https://github.com/open-telemetry/opentelemetry-go
-+ break
-+ [[ https://github.com/open-telemetry/opentelemetry-go = h		ps://gi	hu.com ]]
-+ git clone https://github.com/open-telemetry/opentelemetry-go
-++ basename https://github.com/open-telemetry/opentelemetry-go .git
-+ repo_dir=opentelemetry-go
-+ cd opentelemetry-go
-++ find . -type d -name '' -print -quit
-+ subcomponent=
-+ [[ -n '' ]]
-++ grep -rIE '^(s**|//|#)?s*Copyright( ©)?( [0-9]{4})? .+' --exclude-dir=vendor --exclude-dir=.git .
-++ cut -d: -f2
-++ sed 's/^[[:space:]#/*]+//'
-++ sort
-++ uniq
-++ grep -vIE '^s*(*|//|#)?s*Copyrights*(()?(c|C|©)?())?s+([[|{|<]?(yyyy|[0-9]{4}|year)?[]|}|>]?)?s+([[|{|<]?(name of copyright owner|name of author)[]|}|>]?)?s*$'
-++ tr '
-' '
-'
-+ copyright_txt='Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2022 The Go Authors. All rights reserved.
-Copyright The OpenTelemetry Authors
-'
-+ [[ -z Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2022 The Go Authors. All rights reserved.
-Copyright The OpenTelemetry Authors
- ]]
-+ cd ..
-+ rm -rf ./opentelemetry-go
-+ echo Copyright 2009 The Go Authors. All rights 'reserved.
-Copyright' 2022 The Go Authors. All rights 'reserved.
-Copyright' The OpenTelemetry 'Authors
-'
 Copyright 2009 The Go Authors. All rights reserved.
 Copyright 2022 The Go Authors. All rights reserved.
 Copyright The OpenTelemetry Authors
@@ -2626,71 +2796,7 @@ go.opentelemetry.io/otel/sdk
 SPDX:Apache-2.0
 
 == Copyright
-+ GO_PKG=go.opentelemetry.io/otel/sdk:v1.29.0
-++ echo go.opentelemetry.io/otel/sdk:v1.29.0
-++ cut -d: -f1
-+ pkg=go.opentelemetry.io/otel/sdk
-++ echo go.opentelemetry.io/otel/sdk:v1.29.0
-++ cut -d: -f2
-+ pkg_version=v1.29.0
-+ [[ -z go.opentelemetry.io/otel/sdk ]]
-+ [[ -z v1.29.0 ]]
-+ pkg=go.opentelemetry.io/otel/sdk
-+ query=
-+ [[ v1.29.0 =~ ^v[0-9]+.[0-9]+.[0-9]+$ ]]
-+ query='curl -s https://proxy.golang.org/go.opentelemetry.io/otel/sdk/@v/v1.29.0.info|jq -r '''.Origin.URL''''
-+ pkg_version=v1.29.0
-++ eval 'curl -s https://proxy.golang.org/go.opentelemetry.io/otel/sdk/@v/v1.29.0.info|jq -r '''.Origin.URL''''
-+++ curl -s https://proxy.golang.org/go.opentelemetry.io/otel/sdk/@v/v1.29.0.info
-+++ jq -r .Origin.URL
-+ pkg_github_url=https://github.com/open-telemetry/opentelemetry-go
-+ [[ https://github.com/open-telemetry/opentelemetry-go = 
-ull ]]
-+ [[ go.opentelemetry.io/otel/sdk =~ ^github.com ]]
-+ [[ -z https://github.com/open-telemetry/opentelemetry-go ]]
-+ [[ https://github.com/open-telemetry/opentelemetry-go = 
-ull ]]
-++ echo https://github.com/open-telemetry/opentelemetry-go
-++ sed 's|/v[0-9]+/*$||'
-+ pkg_github_url=https://github.com/open-telemetry/opentelemetry-go
-+ trimmed_dir=
-+ [[ https://github.com/open-telemetry/opentelemetry-go != h		ps://gi	hu.com ]]
-+ wget --spider --timeout=3 -q https://github.com/open-telemetry/opentelemetry-go
-+ break
-+ [[ https://github.com/open-telemetry/opentelemetry-go = h		ps://gi	hu.com ]]
-+ git clone https://github.com/open-telemetry/opentelemetry-go
-++ basename https://github.com/open-telemetry/opentelemetry-go .git
-+ repo_dir=opentelemetry-go
-+ cd opentelemetry-go
-++ find . -type d -name '' -print -quit
-+ subcomponent=
-+ [[ -n '' ]]
-++ grep -rIE '^(s**|//|#)?s*Copyright( ©)?( [0-9]{4})? .+' --exclude-dir=vendor --exclude-dir=.git .
-++ cut -d: -f2
-++ sed 's/^[[:space:]#/*]+//'
-++ sort
-++ uniq
-++ grep -vIE '^s*(*|//|#)?s*Copyrights*(()?(c|C|©)?())?s+([[|{|<]?(yyyy|[0-9]{4}|year)?[]|}|>]?)?s+([[|{|<]?(name of copyright owner|name of author)[]|}|>]?)?s*$'
-++ tr '
-' '
-'
-+ copyright_txt='Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2022 The Go Authors. All rights reserved.
-Copyright The OpenTelemetry Authors
-'
-+ [[ -z Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2022 The Go Authors. All rights reserved.
-Copyright The OpenTelemetry Authors
- ]]
-+ cd ..
-+ rm -rf ./opentelemetry-go
-+ echo Copyright 2009 The Go Authors. All rights 'reserved.
-Copyright' 2022 The Go Authors. All rights 'reserved.
-Copyright' The OpenTelemetry 'Authors
-'
-Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2022 The Go Authors. All rights reserved.
-Copyright The OpenTelemetry Authors
+(no copyright notices found)
 
 --------------------------------- (separator) ----------------------------------
 
@@ -2701,68 +2807,6 @@ go.opentelemetry.io/otel/trace
 SPDX:Apache-2.0
 
 == Copyright
-+ GO_PKG=go.opentelemetry.io/otel/trace:v1.29.0
-++ echo go.opentelemetry.io/otel/trace:v1.29.0
-++ cut -d: -f1
-+ pkg=go.opentelemetry.io/otel/trace
-++ echo go.opentelemetry.io/otel/trace:v1.29.0
-++ cut -d: -f2
-+ pkg_version=v1.29.0
-+ [[ -z go.opentelemetry.io/otel/trace ]]
-+ [[ -z v1.29.0 ]]
-+ pkg=go.opentelemetry.io/otel/trace
-+ query=
-+ [[ v1.29.0 =~ ^v[0-9]+.[0-9]+.[0-9]+$ ]]
-+ query='curl -s https://proxy.golang.org/go.opentelemetry.io/otel/trace/@v/v1.29.0.info|jq -r '''.Origin.URL''''
-+ pkg_version=v1.29.0
-++ eval 'curl -s https://proxy.golang.org/go.opentelemetry.io/otel/trace/@v/v1.29.0.info|jq -r '''.Origin.URL''''
-+++ curl -s https://proxy.golang.org/go.opentelemetry.io/otel/trace/@v/v1.29.0.info
-+++ jq -r .Origin.URL
-+ pkg_github_url=https://github.com/open-telemetry/opentelemetry-go
-+ [[ https://github.com/open-telemetry/opentelemetry-go = 
-ull ]]
-+ [[ go.opentelemetry.io/otel/trace =~ ^github.com ]]
-+ [[ -z https://github.com/open-telemetry/opentelemetry-go ]]
-+ [[ https://github.com/open-telemetry/opentelemetry-go = 
-ull ]]
-++ echo https://github.com/open-telemetry/opentelemetry-go
-++ sed 's|/v[0-9]+/*$||'
-+ pkg_github_url=https://github.com/open-telemetry/opentelemetry-go
-+ trimmed_dir=
-+ [[ https://github.com/open-telemetry/opentelemetry-go != h		ps://gi	hu.com ]]
-+ wget --spider --timeout=3 -q https://github.com/open-telemetry/opentelemetry-go
-+ break
-+ [[ https://github.com/open-telemetry/opentelemetry-go = h		ps://gi	hu.com ]]
-+ git clone https://github.com/open-telemetry/opentelemetry-go
-++ basename https://github.com/open-telemetry/opentelemetry-go .git
-+ repo_dir=opentelemetry-go
-+ cd opentelemetry-go
-++ find . -type d -name '' -print -quit
-+ subcomponent=
-+ [[ -n '' ]]
-++ grep -rIE '^(s**|//|#)?s*Copyright( ©)?( [0-9]{4})? .+' --exclude-dir=vendor --exclude-dir=.git .
-++ cut -d: -f2
-++ sed 's/^[[:space:]#/*]+//'
-++ sort
-++ uniq
-++ grep -vIE '^s*(*|//|#)?s*Copyrights*(()?(c|C|©)?())?s+([[|{|<]?(yyyy|[0-9]{4}|year)?[]|}|>]?)?s+([[|{|<]?(name of copyright owner|name of author)[]|}|>]?)?s*$'
-++ tr '
-' '
-'
-+ copyright_txt='Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2022 The Go Authors. All rights reserved.
-Copyright The OpenTelemetry Authors
-'
-+ [[ -z Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2022 The Go Authors. All rights reserved.
-Copyright The OpenTelemetry Authors
- ]]
-+ cd ..
-+ rm -rf ./opentelemetry-go
-+ echo Copyright 2009 The Go Authors. All rights 'reserved.
-Copyright' 2022 The Go Authors. All rights 'reserved.
-Copyright' The OpenTelemetry 'Authors
-'
 Copyright 2009 The Go Authors. All rights reserved.
 Copyright 2022 The Go Authors. All rights reserved.
 Copyright The OpenTelemetry Authors
@@ -2909,6 +2953,7 @@ Copyright 2021 The Go Authors. All rights reserved.
 Copyright 2022 The Go Authors. All rights reserved.
 Copyright 2023 The Go Authors. All rights reserved.
 Copyright 2024 The Go Authors. All rights reserved.
+Copyright 2025 The Go Authors. All rights reserved.
 
 == Patents
 Additional IP Rights Grant (Patents)
@@ -3688,24 +3733,7 @@ gomodules.xyz/jsonpatch/v2
 SPDX:Apache-2.0
 
 == Copyright
-Copyright 2015 Matthew Baird mattbaird@gmail.com
-Copyright 2016 GitHub noreply@github.com
-Copyright 2016 Tom Michaud tom.michaud@gmail.com
-Copyright 2017 Clark Archer carcher@drillinginfo.com
-Copyright 2017 Darius Staisiunas darius@uber.com
-Copyright 2017 GitHub noreply@github.com
-Copyright 2017 Jaime Pillora dev@jpillora.com
-Copyright 2018 GitHub noreply@github.com
-Copyright 2018 tamal tamal@appscode.com
-Copyright 2019 GitHub noreply@github.com
-Copyright 2019 Tamal Saha tamal@appscode.com
-Copyright 2020 GitHub noreply@github.com
-Copyright 2021 GitHub noreply@github.com
-Copyright 2021 Tamal Saha tamal@appscode.com
-Copyright 2023 GitHub noreply@github.com
-Copyright 2023 John Howard howardjohn@google.com
-Copyright 2025 GitHub noreply@github.com
-Copyright 2025 Thomas Lacroix thomas.lacroix@ubisoft.com
+(no copyright notices found)
 
 --------------------------------- (separator) ----------------------------------
 
@@ -3716,7 +3744,7 @@ google.golang.org/genproto/googleapis/api
 SPDX:Apache-2.0
 
 == Copyright
-Copyright 2024 Google LLC
+Copyright 2025 Google LLC
 
 --------------------------------- (separator) ----------------------------------
 
@@ -3727,7 +3755,7 @@ google.golang.org/genproto/googleapis/rpc
 SPDX:Apache-2.0
 
 == Copyright
-Copyright 2024 Google LLC
+Copyright 2025 Google LLC
 
 --------------------------------- (separator) ----------------------------------
 
@@ -3754,6 +3782,7 @@ Copyright 2021 gRPC authors.
 Copyright 2022 gRPC authors.
 Copyright 2023 gRPC authors.
 Copyright 2024 gRPC authors.
+Copyright 2025 gRPC authors.
 
 == Notices
 Copyright 2014 gRPC authors.
