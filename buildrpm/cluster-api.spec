@@ -35,6 +35,11 @@ A CLI tool that handles the lifecycle of a Cluster API management cluster.
 %setup -q -n %{name}-%{version}
 
 %build
+export GO_VERSION=$(grep go go.mod | head -n1 | awk'{print $2}')
+export GO_DIRECTIVE_VERSION=$GO_VERSION
+
+echo $GO_VERSION
+echo $GO_DIRECTIVE_VERSION
 git fetch --tags
 go mod download
 make manager-core
