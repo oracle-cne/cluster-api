@@ -49,6 +49,7 @@ import (
 
 	bootstrapv1 "sigs.k8s.io/cluster-api/bootstrap/kubeadm/api/v1beta1"
 	"sigs.k8s.io/cluster-api/bootstrap/kubeadm/internal/cloudinit"
+	"sigs.k8s.io/cluster-api/bootstrap/kubeadm/internal/ignition/common"
 )
 
 const (
@@ -255,70 +256,8 @@ storage:
 `
 )
 
-type render struct {
-	*cloudinit.BaseUserData
-
-	KubeadmConfig            string
-	UsersWithPasswordAuth    string
-	FilesystemDevicesByLabel map[string]string
-}
-
-func defaultTemplateFuncMap() template.FuncMap {
-	return template.FuncMap{
-		"Indent":         templateYAMLIndent,
-		"Split":          strings.Split,
-		"Join":           strings.Join,
-		"MountpointName": mountpointName,
-		"ParseOwner":     parseOwner,
-	}
-}
-
-func mountpointName(name string) string {
-	return strings.TrimPrefix(strings.ReplaceAll(name, "/", "-"), "-")
-}
-
-func templateYAMLIndent(i int, input string) string {
-	split := strings.Split(input, "\n")
-	ident := "\n" + strings.Repeat(" ", i)
-	return strings.Join(split, ident)
-}
-
-type owner struct {
-	User  *string
-	Group *string
-}
-
-func parseOwner(ownerRaw string) owner {
-	if ownerRaw == "" {
-		return owner{}
-	}
-
-	ownerSlice := strings.Split(ownerRaw, ":")
-
-	parseEntity := func(entity string) *string {
-		if entity == "" {
-			return nil
-		}
-
-		entityTrimmed := strings.TrimSpace(entity)
-
-		return &entityTrimmed
-	}
-
-	if len(ownerSlice) == 1 {
-		return owner{
-			User: parseEntity(ownerSlice[0]),
-		}
-	}
-
-	return owner{
-		User:  parseEntity(ownerSlice[0]),
-		Group: parseEntity(ownerSlice[1]),
-	}
-}
-
 func renderCLC(input *cloudinit.BaseUserData, kubeadmConfig string) ([]byte, error) {
-	t := template.Must(template.New("template").Funcs(defaultTemplateFuncMap()).Parse(clcTemplate))
+	t := template.Must(template.New("template").Funcs(common.DefaultTemplateFunctions()).Parse(clcTemplate))
 
 	usersWithPasswordAuth := []string{}
 	for _, user := range input.Users {
@@ -334,7 +273,7 @@ func renderCLC(input *cloudinit.BaseUserData, kubeadmConfig string) ([]byte, err
 		}
 	}
 
-	data := render{
+	data := common.Data{
 		BaseUserData:             input,
 		KubeadmConfig:            kubeadmConfig,
 		UsersWithPasswordAuth:    strings.Join(usersWithPasswordAuth, ","),
