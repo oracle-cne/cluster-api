@@ -3109,6 +3109,14 @@ spec:
                                   as errors.
                                 type: boolean
                             type: object
+                          variant:
+                            description: Variant selects the Operating System variant
+                              to use for the generated configuration
+                            type: string
+                          version:
+                            description: Version selects the version of Butane to
+                              use for generated configuration
+                            type: string
                         type: object
                       initConfiguration:
                         description: initConfiguration along with ClusterConfiguration
