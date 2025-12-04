@@ -1,4 +1,4 @@
-@Library('olcne-pipeline') _
+@Library('olcne-pipeline@privs') _
 import com.oracle.olcne.pipeline.BranchPattern
 
 String version = '1.10.8'
