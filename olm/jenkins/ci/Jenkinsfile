@@ -1,0 +1,16 @@
+@Library('olcne-pipeline') _
+import com.oracle.olcne.pipeline.BranchPattern
+
+String version = '1.10.10'
+String imgTag  = "v" + version
+
+olcnePipeline(
+        branchPattern: new BranchPattern(master: "oracle/release/" + version, feature: '(?!^release/.*$)(^.*$)'),
+        containers: [('container-registry.oracle.com/olcne/cluster-api-controller:' + imgTag): 'olcne/cluster-api-controller:' + imgTag,
+                     ('container-registry.oracle.com/olcne/clusterctl:' + imgTag): 'olcne/clusterctl:' + imgTag,
+                     ('container-registry.oracle.com/olcne/kubeadm-bootstrap-controller:' + imgTag): 'olcne/kubeadm-bootstrap-controller:' + imgTag,
+                     ('container-registry.oracle.com/olcne/kubeadm-control-plane-controller:' + imgTag): 'olcne/kubeadm-control-plane-controller:' + imgTag],
+        platforms: ['ol8'],
+        architectures: ['x86_64', 'aarch64'],
+        publishImage: false,
+)
