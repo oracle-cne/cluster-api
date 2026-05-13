@@ -1,0 +1,6 @@
+kubernetesClusterDomain: cluster.local
+controllerManager:
+  manager:
+    image:
+      repository: olcne/cluster-api-controller
+fullnameOverride: capi
