@@ -5,9 +5,11 @@
 if [ "$(uname)" == "Linux" ]; then
   echo "Installing the build dependencies required for generating the helm charts"
   dnf config-manager --add-repo https://yum.oracle.com/repo/OracleLinux/OL8/olcne18/x86_64
-  dnf config-manager --enable olcne_incubator
-  dnf install -y yq helmify clusterctl
+  dnf install -y yq helmify
 fi
+
+echo "Building clusterctl"
+make clusterctl
 
 echo "Generating the helm charts"
 mkdir charts
