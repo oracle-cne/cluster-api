@@ -19,6 +19,8 @@ mkdir charts
 ./bin/clusterctl generate provider --infrastructure oci | helmify -crd-dir charts/oci-capi
 rm ./bin/clusterctl
 
+find ./charts -type f
+
 echo "Customizing values for core-capi"
 yq -i '.controllerManager.manager.image.repository = "olcne/cluster-api-controller"' charts/core-capi/values.yaml
 
@@ -48,4 +50,4 @@ yq -i ".appVersion = \"$ociCapiVersion\"" charts/oci-capi/Chart.yaml
 ociCapiSemVer=${ociCapiVersion:1}
 yq -i ".version = \"$ociCapiSemVer\"" charts/oci-capi/Chart.yaml
 
-find ./charts
+find ./charts -type f
