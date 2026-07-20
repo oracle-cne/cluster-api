@@ -47,3 +47,5 @@ ociCapiVersion=$(yq '.controllerManager.manager.image.tag' charts/oci-capi/value
 yq -i ".appVersion = \"$ociCapiVersion\"" charts/oci-capi/Chart.yaml
 ociCapiSemVer=${ociCapiVersion:1}
 yq -i ".version = \"$ociCapiSemVer\"" charts/oci-capi/Chart.yaml
+
+find ./charts
