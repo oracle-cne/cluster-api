@@ -19,6 +19,7 @@ License:        Apache-2.0
 Group:          System/Management
 Url:            https://github.com/kubernetes-sigs/cluster-api.git
 Source:         %{name}-%{version}.tar.bz2
+Patch0:         Makefile.patch
 BuildRequires:  golang >= 1.20.12
 BuildRequires:	make
 
@@ -33,6 +34,7 @@ A CLI tool that handles the lifecycle of a Cluster API management cluster.
 
 %prep
 %setup -q -n %{name}-%{version}
+%patch0 -p1
 
 %build
 git fetch --tags
