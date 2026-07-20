@@ -17,6 +17,7 @@ mkdir charts
 ./bin/clusterctl generate provider --bootstrap kubeadm | helmify -crd-dir charts/bootstrap-capi
 ./bin/clusterctl generate provider --control-plane kubeadm | helmify -crd-dir charts/control-plane-capi
 ./bin/clusterctl generate provider --infrastructure oci | helmify -crd-dir charts/oci-capi
+rm ./bin/clusterctl
 
 echo "Customizing values for core-capi"
 yq -i '.controllerManager.manager.image.repository = "olcne/cluster-api-controller"' charts/core-capi/values.yaml
