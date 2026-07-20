@@ -5,7 +5,7 @@
 if [ "$(uname)" == "Linux" ]; then
   echo "Installing the build dependencies required for generating the helm charts"
   dnf config-manager --add-repo https://yum.oracle.com/repo/OracleLinux/OL8/olcne18/x86_64
-  dnf install -y yq helmify
+  dnf install -y yq helmify make
 fi
 
 echo "Building clusterctl"
