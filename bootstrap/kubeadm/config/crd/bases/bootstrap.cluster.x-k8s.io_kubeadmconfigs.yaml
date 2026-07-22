@@ -1363,6 +1363,14 @@ spec:
                           strictly parsed. If so, warnings are treated as errors.
                         type: boolean
                     type: object
+                  variant:
+                    description: variant selects the Operating System variant to use
+                      for generated configuration.
+                    type: string
+                  version:
+                    description: version selects the Butane version to use for generated
+                      configuration.
+                    type: string
                 type: object
               initConfiguration:
                 description: initConfiguration along with ClusterConfiguration are
@@ -3758,6 +3766,14 @@ spec:
                           strictly parsed. If so, warnings are treated as errors.
                         type: boolean
                     type: object
+                  variant:
+                    description: variant selects the Operating System variant to use
+                      for generated configuration.
+                    type: string
+                  version:
+                    description: version selects the Butane version to use for generated
+                      configuration.
+                    type: string
                 type: object
               initConfiguration:
                 description: initConfiguration along with ClusterConfiguration are

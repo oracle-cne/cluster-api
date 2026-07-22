@@ -81,6 +81,49 @@ func Test_NewNode(t *testing.T) {
 		}
 	})
 
+	t.Run("returns FCOS Ignition when fcos variant and Butane version are set", func(t *testing.T) {
+		t.Parallel()
+
+		input := &ignition.NodeInput{
+			NodeInput: &cloudinit.NodeInput{},
+			Ignition: &bootstrapv1.IgnitionSpec{
+				Variant: "fcos",
+				Version: "1.5.0",
+			},
+		}
+
+		ignitionData, _, err := ignition.NewNode(input)
+		if err != nil {
+			t.Fatalf("Unexpected error: %v", err)
+		}
+
+		decodedValue := map[string]interface{}{}
+		if err := json.Unmarshal(ignitionData, &decodedValue); err != nil {
+			t.Fatalf("Decoding received Ignition data as JSON: %v", err)
+		}
+	})
+
+	t.Run("returns error when unsupported ignition variant and version are set", func(t *testing.T) {
+		t.Parallel()
+
+		input := &ignition.NodeInput{
+			NodeInput: &cloudinit.NodeInput{},
+			Ignition: &bootstrapv1.IgnitionSpec{
+				Variant: "fcos",
+				Version: "9.9.9",
+			},
+		}
+
+		ignitionData, _, err := ignition.NewNode(input)
+		if err == nil {
+			t.Fatalf("Expected error")
+		}
+
+		if ignitionData != nil {
+			t.Fatalf("Unexpected data returned %v", ignitionData)
+		}
+	})
+
 	t.Run("returns Ignition with user-specified snippet", func(t *testing.T) {
 		t.Parallel()
 

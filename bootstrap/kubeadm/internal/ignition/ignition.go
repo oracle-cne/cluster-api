@@ -24,6 +24,7 @@ import (
 	bootstrapv1 "sigs.k8s.io/cluster-api/api/bootstrap/kubeadm/v1beta2"
 	"sigs.k8s.io/cluster-api/bootstrap/kubeadm/internal/cloudinit"
 	"sigs.k8s.io/cluster-api/bootstrap/kubeadm/internal/ignition/clc"
+	"sigs.k8s.io/cluster-api/bootstrap/kubeadm/internal/ignition/fcos1_5"
 )
 
 const (
@@ -105,11 +106,34 @@ func NewInitControlPlane(input *ControlPlaneInput) ([]byte, string, error) {
 	return render(&input.BaseUserData, input.Ignition, kubeadmConfig)
 }
 
+var renderers = map[string]func(*cloudinit.BaseUserData, *bootstrapv1.ContainerLinuxConfig, string) ([]byte, string, error){
+	// Container Linux is the default renderer.
+	"":           clc.Render,
+	"fcos+1.5.0": fcos1_5.Render,
+}
+
+func getTranslator(ignitionConfig *bootstrapv1.IgnitionSpec) string {
+	if ignitionConfig == nil {
+		return ""
+	}
+
+	if ignitionConfig.Variant == "" && ignitionConfig.Version == "" {
+		return ""
+	}
+
+	return fmt.Sprintf("%s+%s", ignitionConfig.Variant, ignitionConfig.Version)
+}
+
 func render(input *cloudinit.BaseUserData, ignitionConfig *bootstrapv1.IgnitionSpec, kubeadmConfig string) ([]byte, string, error) {
 	clcConfig := &bootstrapv1.ContainerLinuxConfig{}
 	if ignitionConfig != nil && ignitionConfig.ContainerLinuxConfig.IsDefined() {
 		clcConfig = &ignitionConfig.ContainerLinuxConfig
 	}
 
-	return clc.Render(input, clcConfig, kubeadmConfig)
+	renderer, ok := renderers[getTranslator(ignitionConfig)]
+	if !ok {
+		return nil, "", fmt.Errorf("ignition version %s for variant %s is not supported", ignitionConfig.Version, ignitionConfig.Variant)
+	}
+
+	return renderer(input, clcConfig, kubeadmConfig)
 }
