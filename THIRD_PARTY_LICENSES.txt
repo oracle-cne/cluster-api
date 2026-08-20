@@ -210,12 +210,8 @@ github.com/aws/aws-sdk-go
 SPDX:Apache-2.0
 
 == Copyright
-Copyright (c) 2009 The Go Authors. All rights reserved.
-Copyright (c) 2016 Carl Jackson
-Copyright 2013 The Go Authors. All rights reserved.
 Copyright 2014-2015 Stripe, Inc.
 Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
 == Notices
 AWS SDK for Go
@@ -281,7 +277,6 @@ Copyright 2010 The Go Authors. All rights reserved.
 Copyright 2011 The Go Authors. All rights reserved.
 Copyright 2013 The Go Authors. All rights reserved.
 Copyright 2016 The Go Authors. All rights reserved.
-Copyright 2018 The Go Authors. All rights reserved.
 Copyright 2019 The Go Authors. All rights reserved.
 
 --------------------------------- (separator) ----------------------------------
@@ -357,9 +352,7 @@ Copyright 2019 Red Hat, Inc.
 Copyright 2020 Red Hat, Inc
 Copyright 2021 Red Hat, Inc
 Copyright 2022 Red Hat, Inc
-Copyright 2022 Red Hat, Inc.
 Copyright 2023 Red Hat, Inc
-Copyright 2023 Red Hat, Inc.
 
 --------------------------------- (separator) ----------------------------------
 
@@ -375,9 +368,7 @@ Copyright 2010 The Go Authors. All rights reserved.
 Copyright 2011 The Go Authors. All rights reserved.
 Copyright 2013 The Go Authors. All rights reserved.
 Copyright 2016 The Go Authors. All rights reserved.
-Copyright 2018 The Go Authors. All rights reserved.
 Copyright 2019 The Go Authors. All rights reserved.
-Copyright 2021 The Go Authors. All rights reserved.
 
 == Patents
 Additional IP Rights Grant (Patents)
@@ -491,28 +482,15 @@ github.com/coreos/ignition/v2
 SPDX:Apache-2.0
 
 == Copyright
-Copyright 2014-2015 VMware, Inc. All Rights Reserved.
 Copyright 2015 CoreOS, Inc
 Copyright 2015 CoreOS, Inc.
 Copyright 2016 CoreOS, Inc.
 Copyright 2017 CoreOS, Inc.
-Copyright 2018 - The Ignition authors
 Copyright 2018 CoreOS, Inc.
-Copyright 2019 CoreOS, Inc.
-Copyright 2019 Red Hat
 Copyright 2019 Red Hat, Inc.
-Copyright 2019 RedHat, Inc.
-Copyright 2020 CoreOS, Inc.
-Copyright 2020 Red Hat
 Copyright 2020 Red Hat, Inc.
-Copyright 2021 Red Hat
 Copyright 2021 Red Hat, Inc.
-Copyright 2021 Red Hat.
 Copyright 2022 Red Hat, Inc.
-Copyright 2023 CoreOS, Inc.
-Copyright 2023 Red Hat
-Copyright 2023 Red Hat, Inc.
-Copyright 2024 CoreOS, Inc.
 
 == Notices
 CoreOS Project
@@ -705,7 +683,6 @@ SPDX:Apache-2.0
 
 == Copyright
 Copyright 2014 CoreOS, Inc
-Copyright 2015 CoreOS, Inc.
 Copyright 2016 CoreOS, Inc.
 Copyright 2017 CoreOS, Inc.
 Copyright 2018 CoreOS, Inc.
@@ -4625,33 +4602,7 @@ go4.org
 SPDX:Apache-2.0
 
 == Copyright
-Copyright 2009 The Go Authors. All rights reserved.
-Copyright 2010 The Go Authors. All rights reserved.
 Copyright 2011 Google Inc.
-Copyright 2011 The Go Authors. All rights reserved.
-Copyright 2011 The Go4 Authors
-Copyright 2011 The Perkeep Authors
-Copyright 2011 The go4 Authors
-Copyright 2012 Google Inc.
-Copyright 2012 The Go4 Authors
-Copyright 2013 Google Inc.
-Copyright 2013 The Go Authors
-Copyright 2013 The Go Authors. All rights reserved.
-Copyright 2013 The Go4 Authors
-Copyright 2013 The Perkeep Authors
-Copyright 2014 The Go4 Authors
-Copyright 2014 The Perkeep Authors
-Copyright 2015 The Go4 Authors
-Copyright 2015 The Perkeep Authors
-Copyright 2015 The go4 Authors
-Copyright 2016 The Go Authors. All rights reserved.
-Copyright 2016 The Go4 Authors.
-Copyright 2016 The go4 Authors
-Copyright 2016 The go4.org Authors
-Copyright 2017 The go4 Authors
-Copyright 2018 The Go Authors. All rights reserved.
-Copyright 2018 The go4 Authors
-Copyright 2019 The Perkeep Authors
 
 --------------------------------- (separator) ----------------------------------
 
