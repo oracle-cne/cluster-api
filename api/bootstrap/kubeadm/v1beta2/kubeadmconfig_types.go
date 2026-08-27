@@ -437,6 +437,14 @@ func (c *KubeadmConfigSpec) validateDiskSetup(pathPrefix *field.Path) field.Erro
 // IgnitionSpec contains Ignition specific configuration.
 // +kubebuilder:validation:MinProperties=1
 type IgnitionSpec struct {
+	// variant selects the Operating System variant to use for generated configuration.
+	// +optional
+	Variant string `json:"variant,omitempty"`
+
+	// version selects the Butane version to use for generated configuration.
+	// +optional
+	Version string `json:"version,omitempty"`
+
 	// containerLinuxConfig contains CLC specific configuration.
 	// +optional
 	ContainerLinuxConfig ContainerLinuxConfig `json:"containerLinuxConfig,omitempty,omitzero"`

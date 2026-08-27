@@ -1031,11 +1031,15 @@ func Convert_v1beta2_HostPathMount_To_v1beta1_HostPathMount(in *v1beta2.HostPath
 }
 
 func autoConvert_v1beta1_IgnitionSpec_To_v1beta2_IgnitionSpec(in *IgnitionSpec, out *v1beta2.IgnitionSpec, s conversion.Scope) error {
+	out.Variant = in.Variant
+	out.Version = in.Version
 	// WARNING: in.ContainerLinuxConfig requires manual conversion: inconvertible types (*sigs.k8s.io/cluster-api/api/bootstrap/kubeadm/v1beta1.ContainerLinuxConfig vs sigs.k8s.io/cluster-api/api/bootstrap/kubeadm/v1beta2.ContainerLinuxConfig)
 	return nil
 }
 
 func autoConvert_v1beta2_IgnitionSpec_To_v1beta1_IgnitionSpec(in *v1beta2.IgnitionSpec, out *IgnitionSpec, s conversion.Scope) error {
+	out.Variant = in.Variant
+	out.Version = in.Version
 	// WARNING: in.ContainerLinuxConfig requires manual conversion: inconvertible types (sigs.k8s.io/cluster-api/api/bootstrap/kubeadm/v1beta2.ContainerLinuxConfig vs *sigs.k8s.io/cluster-api/api/bootstrap/kubeadm/v1beta1.ContainerLinuxConfig)
 	return nil
 }

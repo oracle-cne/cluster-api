@@ -863,6 +863,8 @@ func Convert_v1beta2_KubeadmConfigSpec_To_v1beta1_KubeadmConfigSpec(in *bootstra
 }
 
 func Convert_v1beta1_IgnitionSpec_To_v1beta2_IgnitionSpec(in *IgnitionSpec, out *bootstrapv1.IgnitionSpec, s apimachineryconversion.Scope) error {
+	out.Variant = in.Variant
+	out.Version = in.Version
 	if in.ContainerLinuxConfig != nil {
 		if err := Convert_v1beta1_ContainerLinuxConfig_To_v1beta2_ContainerLinuxConfig(in.ContainerLinuxConfig, &out.ContainerLinuxConfig, s); err != nil {
 			return err
@@ -872,6 +874,8 @@ func Convert_v1beta1_IgnitionSpec_To_v1beta2_IgnitionSpec(in *IgnitionSpec, out 
 }
 
 func Convert_v1beta2_IgnitionSpec_To_v1beta1_IgnitionSpec(in *bootstrapv1.IgnitionSpec, out *IgnitionSpec, s apimachineryconversion.Scope) error {
+	out.Variant = in.Variant
+	out.Version = in.Version
 	if !reflect.DeepEqual(in.ContainerLinuxConfig, bootstrapv1.ContainerLinuxConfig{}) {
 		out.ContainerLinuxConfig = &ContainerLinuxConfig{}
 		if err := Convert_v1beta2_ContainerLinuxConfig_To_v1beta1_ContainerLinuxConfig(&in.ContainerLinuxConfig, out.ContainerLinuxConfig, s); err != nil {
