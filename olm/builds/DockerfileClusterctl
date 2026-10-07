@@ -1,0 +1,17 @@
+FROM ghcr.io/oracle/oraclelinux:8-slim
+
+ARG RPM
+
+COPY rpms/${RPM} /tmp/
+
+RUN microdnf update && \
+    microdnf clean all && \
+    rpm -i /tmp/*.rpm && \
+    rm /tmp/*.rpm && \
+    groupadd -r ocne && \
+    useradd --no-log-init -r -m -d /ocne -g ocne -u 1000 ocne && \
+    mkdir -p /home/ocne && \
+    chown -R 1000:ocne /home/ocne
+
+USER 1000
+ENTRYPOINT ["/usr/bin/clusterctl"]
